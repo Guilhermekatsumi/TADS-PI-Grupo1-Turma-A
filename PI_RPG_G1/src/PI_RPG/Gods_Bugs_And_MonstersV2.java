@@ -370,8 +370,10 @@ public class Gods_Bugs_And_MonstersV2 {
 	
 	static void DesafioLeao() {
 Scanner input = new Scanner(System.in);
+		int life = 100;
 		
 		System.out.println("Parabéns! Você escolheu a batalha com o Leão de Nemeia, deseja lutar com a criatura agora com qual nome?: ");
+		nomeHeroi = input.next();
 		System.out.println("Ok! Você será conhecido e lembrando nessa nobre batalha pelo nome de " + nomeHeroi + "!");
 		
         
@@ -436,6 +438,8 @@ Scanner input = new Scanner(System.in);
 		case "e":
 		case "E":
 		System.out.println("Infelizmente você errou! Porém o Leão muito conhecido na região e seu rugido aterrorizante é escutado a kilometros de dsitancia, siga os rugidos");
+		life = life -5;
+		System.out.println(life);
 		break;
 		default:
 		System.out.println("Sair sem responder");
@@ -511,23 +515,23 @@ Scanner input = new Scanner(System.in);
 		switch (opcoes) {
 		case 1:
 		System.out.println("Na região Norte possui um Vale habitado por comeias de abelhas assassinas, infelizmente"
-				+ " você teve um dano de 20 Hits de vida, escolha um novo caminho no menu: ");
+				+ " você teve um dano de -5 Hits de vida, escolha um novo caminho no menu: ");
 		break;
 		case 2:
 		System.out.println("Na região Leste possui um Vale muito bonito com flores grandes e cheirosas, são venenosas,"
-				+ " infelizmente você teve um dano de 20 Hits de vida, escolha um novo caminho no menu: ");
+				+ " infelizmente você teve um dano de -5 Hits de vida, escolha um novo caminho no menu: ");
 		break;
 		case 3:
 		System.out.println("Na região Sul possui um jardim com grama rasteira habitado por formigas carnivoras,"
-				+ " infelizmente você teve um dano de 20 Hits de vida, escolha um novo caminho no menu: ");
+				+ " infelizmente você teve um dano de -5 Hits de vida, escolha um novo caminho no menu: ");
 		break;
 		case 4:
 		System.out.println("Na região Oeste possui uma Colina habitado por Morcegos cedentos de sangue,"
-				+ " infelizmente você teve um dano de 20 Hits de vida, escolha um novo caminho no menu: ");
+				+ " infelizmente você teve um dano de -5 Hits de vida, escolha um novo caminho no menu: ");
 		break;
 		case 5:
 		System.out.println("Na região Sudoeste possui o Mar Morto habitado por sereias que encantam e "
-				+ "afogam todos os marinheiros que se aventuram na travessia, infelizmente vocês perderá 20 Hits de vida, escolha um novo caminho no menu: ");
+				+ "afogam todos os marinheiros que se aventuram na travessia, infelizmente vocês perderá -5 Hits de vida, escolha um novo caminho no menu: ");
 		break;
 		case 6:
 		System.out.println("Na região Noroeste possui diversos vilarejos habitados por Anões Guerreiros que "
@@ -565,7 +569,9 @@ Scanner input = new Scanner(System.in);
 		case "e":
 		case "E":
 		System.out.println("Infelizmente você errou! O Leão foi mais agil e conseguiu atingi-lo com um só golpe, tente novamente em outra oportunidade após se recuperar dos ferimentos, você pedeu 2o Hits de vida");
-		break;
+		life = life -5;
+		System.out.println(life);
+	    break;
 		default:
 		System.out.println("Parabêns! Foi uma grante batalha! Você conseguiu acertar a cabeça do Leão com a Clava e depois que a fera estava desmaida estrangulou a criatura.");
 		}
