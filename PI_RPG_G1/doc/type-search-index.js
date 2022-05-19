@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"PI_RPG","l":"Gods_Bugs_And_Monsters"}]
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"PI_RPG","l":"Gods_Bugs_And_MonstersV2"}]
