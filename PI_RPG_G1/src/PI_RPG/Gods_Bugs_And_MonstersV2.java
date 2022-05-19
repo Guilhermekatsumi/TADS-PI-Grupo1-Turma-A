@@ -94,6 +94,7 @@ public class Gods_Bugs_And_MonstersV2 {
 		int tentativa = 0;
 		int life = 100;
 		
+		
 			System.out.println("Sua jornada inicia..... Matar o Javali de Erimanto");// escrever melhor a historia
 			System.out.println("");
 
@@ -575,14 +576,15 @@ Scanner input = new Scanner(System.in);
 		
 Scanner input = new Scanner (System.in);
         
-        System.out.println("Hércules contou à rainha a razão daquela expedição e Hipólita ofereceu o cinturão como presente, \n "
-                + "Aela atirou suas flechas em Hércules, mas a pele impenetrável do Leão da Nemeia as fez ricochetear, \n "
-                + "mas o combate só chegou ao fim quando Hércules matou. \n");
+        System.out.println(nomeHeroi+" contou à rainha a razão daquela expedição e Hipólita ofereceu o cinturão como presente, \n "
+                + "Aela atirou suas flechas em "+nomeHeroi+ ", mas a pele impenetrável do Leão da Nemeia as fez ricochetear, \n "
+                + "mas o combate só chegou ao fim quando "+nomeHeroi+ "matou. \n");
         
         System.out.println("FACA O EX PARA CONQUISTAR O CINTO DE HIPOLITA \n");
         System.out.println("Seja h(x) = log(6x-2): \n");
 
         boolean loop = true;
+		int life = 100;
         
         while(loop==true) {
 
@@ -606,6 +608,8 @@ Scanner input = new Scanner (System.in);
                 
                 System.out.println("");
                 System.out.println("tente novamente! \n");
+        		life = life -5;//verificar primeiro erro 
+        		System.out.println(life);
                 loop = true;
                         
                 
