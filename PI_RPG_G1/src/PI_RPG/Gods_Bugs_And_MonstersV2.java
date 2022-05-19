@@ -571,9 +571,51 @@ Scanner input = new Scanner(System.in);
 		}
 	}
 	
-	static void DesafioCaio() {
+	static void DesafioHipolita() {
 		
-	}
+Scanner input = new Scanner (System.in);
+        
+        System.out.println("Hércules contou à rainha a razão daquela expedição e Hipólita ofereceu o cinturão como presente, \n "
+                + "Aela atirou suas flechas em Hércules, mas a pele impenetrável do Leão da Nemeia as fez ricochetear, \n "
+                + "mas o combate só chegou ao fim quando Hércules matou. \n");
+        
+        System.out.println("FACA O EX PARA CONQUISTAR O CINTO DE HIPOLITA \n");
+        System.out.println("Seja h(x) = log(6x-2): \n");
+
+        boolean loop = true;
+        
+        while(loop==true) {
+
+            System.out.println("a) 6/(6x-2) \n"
+                             + "b) 6/ln(10)(6x-2) \n"
+                             + "c) 1/ln(10)(6x-2) \n"
+                             + "d) 6 log(6x-2) \n"
+                             + "e) 1 log(6x-2) \n");
+        
+            String entradaUsuario = input.next();
+
+            switch(entradaUsuario) {
+                
+                case "b":
+                    
+                System.out.println("Voce acertou!");
+                loop = false;
+                break;
+
+                default:
+                
+                System.out.println("");
+                System.out.println("tente novamente! \n");
+                loop = true;
+                        
+                
+            }
+        }
+        
+        System.out.println("Parabens, voce conquistou o cinto de Hipolita!");
+        
+}
+
 	
 	static void DesafioFinal() {
 		
@@ -654,7 +696,7 @@ Scanner input = new Scanner(System.in);
 					DesafioLeao();
 				break;
 				}while (life >= 0) {
-					DesafioCaio();
+					DesafioHipolita();
 				break;
 				}while (life >= 0) {
 					DesafioFinal();
